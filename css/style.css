@@ -1,0 +1,588 @@
+@font-face {
+	font-family: 'Domine-Bold';
+	src: url('../font/Domine-Bold.eot');
+	src: url('../font/Domine-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Domine-Bold.svg#Domine-Bold') format('svg'),
+		 url('../font/Domine-Bold.ttf') format('truetype'),
+		 url('../font/Domine-Bold.woff') format('woff'),
+		 url('../font/Domine-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../font/Montserrat-Bold.eot');
+	src: url('../font/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Montserrat-Bold.svg#Montserrat-Bold') format('svg'),
+		 url('../font/Montserrat-Bold.ttf') format('truetype'),
+		 url('../font/Montserrat-Bold.woff') format('woff'),
+		 url('../font/Montserrat-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('../font/Montserrat-Regular.eot');
+	src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+		 url('../font/Montserrat-Regular.ttf') format('truetype'),
+		 url('../font/Montserrat-Regular.woff') format('woff'),
+		 url('../font/Montserrat-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../font/OpenSans-Bold.eot');
+	src: url('../font/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+		 url('../font/OpenSans-Bold.ttf') format('truetype'),
+		 url('../font/OpenSans-Bold.woff') format('woff'),
+		 url('../font/OpenSans-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../font/OpenSans-Regular.eot');
+	src: url('../font/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+		 url('../font/OpenSans-Regular.ttf') format('truetype'),
+		 url('../font/OpenSans-Regular.woff') format('woff'),
+		 url('../font/OpenSans-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	font-family: "Domine-Bold", "Montserrat-Bold", "Montserrat-Regular", "OpenSans-Bold", "OpenSans-Regular", sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+li:hover {
+	cursor: pointer;
+	background: grey;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 1370px;
+	margin: 0 auto;
+}
+
+.header {
+	background-image:
+	linear-gradient(1deg, rgba(183,209,206,0.3253676470588235) 0%, rgba(183,209,206,0.4206057422969187) 100%),
+		url(../img/photo1.jpg);
+	height: 1058px;
+}
+
+.menu-header {
+	display: flex;
+	width: 940px;
+	margin-left: 215px;
+	margin-right: 215px;
+}
+
+.relative {
+	position: relative;
+	justify-content: center;
+	display: flex;
+}
+
+.relative-content {
+	display: flex;
+}
+
+.button1 {
+	width: 140px;
+	height: 74px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: #fa5c65;
+	font-family: "Domine";
+	display: flex;
+	justify-content: center;
+	transition: .3s;
+}
+
+.button1:hover {
+	cursor: pointer;
+	transform: scale(105%);
+	text-decoration: underline;
+}
+
+
+.button1 a {
+	text-decoration:none;
+	font-size: 20px;
+	line-height: 100px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.button1 i {
+	color:#314a5b;
+	font-size: 4px;
+}
+
+.fa-solid {
+	font-size: 6px;
+	color: tomato;
+}
+
+.menu {
+	display: flex;
+	margin-left: 350px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu li {
+	margin-right: 6px;
+	border-radius: 20px;
+	transition: .1s;
+}
+
+.menu li:last-child {
+	margin-right: 0;
+}
+.menu li a {
+	display: block;
+	color: #263742;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu li:hover a {
+	background-color: #fa5c65;
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: underline;
+	border-radius: 8px;
+}
+
+.social {
+	display: flex;
+} 
+
+.social i {
+	padding: 0 10px;
+	font-size: 20px;
+	color: tomato;
+	transition: .3s;
+}
+
+.social i:hover {
+	cursor: pointer;
+	transform: scale(115%);
+}
+
+.box-item1 {
+	margin-top: 306px;
+	margin-left: 220px;
+	width: 510px;
+	height: 142px;
+}
+
+.box-item1 h1 {
+	font-size: 48px;
+	line-height: 53px;
+	color: #314a5b;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.box-item1 i {
+	font-size: 9px;
+}
+
+.box-item1 h3 {
+	font-size: 20px;
+	line-height: 40px;
+	color: #314a5b;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+	margin-top: 7px;
+}
+
+.button2 {
+	width: 171px;
+	height: 64px;
+	margin-top: 30px;
+	border-radius: 7px;
+	background-color: #fa5c65;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+
+.button2:hover {
+	cursor: pointer;
+	transform: scale(105%);
+	text-decoration: underline;
+}
+
+.button2 a {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 48px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Open Sans", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	margin-left: 215px;
+	margin-right: 215px;
+}
+
+.main a{
+	text-decoration: none;
+	color: #fa5c65;
+}
+.content1 {
+	display: flex;
+	padding-top: 85px;
+	padding-bottom: 110px;
+}
+
+.content-box1 {
+	height: 192px;
+	width: 257px;
+	margin-right: 50px;
+}
+
+.content-box2 {
+	height: 192px;
+	width: 257px;
+	margin-right: 50px;
+}
+
+.content-box1 h1 {
+	font-size: 26px;
+	line-height: 26px;
+	color: #465065;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	width: 120px;
+	text-transform: uppercase;
+	height: 100px;
+}
+
+.content-box2 h1 {
+	font-size: 26px;
+	line-height: 26px;
+	color: #465065;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	width: 210px;
+	text-transform: uppercase;
+	height: 100px;
+}
+
+.text1 {
+	width: 268px;
+	height: 61px;
+	font-size: 15px;
+	line-height: 22px;
+	color: #9aa0ab;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.text2 {
+	display: flex;
+	transition: .3s;
+	color: #fa5c65;
+}
+
+.text2:hover {
+	cursor: pointer;
+	transform: scaleX(98%);
+	text-decoration: underline;
+}
+
+.text2 p {
+	margin-top: 29px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.fa-arrow-right {
+	margin-left: 7px;
+	margin-top: 33px;
+	font-size: 11px;
+}
+
+.content2 {
+	display: flex;
+	padding-bottom: 110px;
+}
+
+.content2 i {
+	font-size: 9px;
+}
+
+.portfolio {
+	margin-left: 85px;
+	width: 386px;
+	height: 296px;
+}
+
+.portfolio h1 {
+	font-size: 40px;
+	letter-spacing: -2px;
+	line-height: 46px;
+	text-transform: uppercase;
+	color: #314a5b;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+}
+
+.portfolio h4 {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #314a5b;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.portfolio p {
+	width: 334px;
+	font-size: 15px;
+	line-height: 22px;
+	color: #9aa0ab;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+	margin-top: 25px;
+}
+
+.text3 {
+	display: flex;
+	transition: .1s;
+	margin-top: 10px;
+	transition: .3s;
+}
+
+.text3:hover {
+	cursor: pointer;
+	transform: scaleX(98%);
+	text-decoration: underline;
+	color: #f0454c;
+}
+
+.text3 p {
+	margin-top: 29px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fa5c65;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	text-transform: uppercase;
+	width: 11%;
+}
+
+.content3 {
+	padding-bottom: 60px;
+
+}
+
+.content3 h1 {
+	font-size: 32px;
+	letter-spacing: -1px;
+	line-height: 54px;
+	text-transform: uppercase;
+	color: #314a5b;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+}
+
+.content3 h4 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #9aa0ab;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.team {
+	display: flex;
+	margin-top: 43px;
+}
+
+.team-content {
+	display: flex;
+}
+
+.team-photo img {
+	border-radius: 50%;
+	border: 1px solid silver;
+}
+
+.team-info {
+	width: 160px;
+	height: 115px;
+	margin-left: 20px;
+}
+
+.team-info h2 {
+	font-size: 22px;
+	letter-spacing: 0px;
+	line-height: 54px;
+	text-transform: uppercase;
+
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	height: 42px;
+}
+
+.team-info a {
+	color: #314a5b;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.team-info a:hover {
+
+	cursor: pointer;
+	transform: scale(101%);
+	text-decoration: underline;
+}
+
+.team-info h4 {
+	font-size: 14px;
+	line-height: 20px;
+	color: #f0454c;
+	font-weight: 700;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.team-info p {
+	width: 147px;
+	height: 44px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #9aa0ab;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+	margin-top: 8px;
+}
+
+.team-content:last-child {
+	margin-left: 20px;
+}
+
+.team-content:nth-child(even) {
+	margin-left: 15px;
+}
+
+.text4 {
+	display: flex;
+	transition: .1s;
+	margin-top: 20px;
+	justify-content: flex-end;
+	transition: .3s;
+}
+
+.text4:hover {
+	cursor: pointer;
+	transform: scale(101%);
+	text-decoration: underline;
+	color: #f0454c;
+}
+
+.text4 p {
+	margin-top: 29px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fa5c65;
+	font-weight: 700;
+	font-family: "Montserrat", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.down-line {
+	border-bottom: 1px solid silver;
+	margin-left: 215px;
+	margin-right: 215px;
+	width: 70%;
+}
+
+.down {
+	display: flex;
+	justify-content: space-between;
+	width: 955px;
+	margin-left: 215px;
+	margin-right: 200px;
+}
+
+.social-links {
+	display: flex;
+	padding: 42px 0;
+	font-size: 18px;
+	width: 10%;
+	height: 30px;
+	justify-content: space-between;
+	align-items: center;
+	color: silver;
+}
+
+.social-links a {
+	color: silver;
+}
+
+.fa-brands {
+	transition: .3s;
+}
+
+.fa-brands:hover {
+	cursor: pointer;
+	transform: scale(130%);
+}
+
+.down p {
+	font-size: 13px;
+	line-height: 60px;
+	color: #b9c0c6;
+	font-weight: 400;
+	font-family: "Open Sans", Arial, sans-serif;
+	text-align: right;
+	margin-top: 10px;
+}
+
